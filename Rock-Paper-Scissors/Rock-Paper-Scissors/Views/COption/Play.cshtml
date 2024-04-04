@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Player vs Computer";
+}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/css.css" />
+</head>
+<body>
+    <div class="playing">
+        <div class="text-center game-title">Player VS Computer</div>
+        <div class="game-options">
+            <div class="option">
+                <div class="game-image">
+                    <img src="~/css/rock.png" alt="Rock" class="rock-image" />
+                </div>
+                <a asp-controller="COption" asp-action="PlayerVsComp" asp-route-id="0" class="btn btn-outline-primary btn-lg game-btn1">ROCK</a>
+            </div>
+            <div class="option">
+                <div class="game-image">
+                    <img src="~/css/paper.png" alt="Paper" class="paper-image" />
+                </div>
+                <a asp-controller="COption" asp-action="PlayerVsComp" asp-route-id="1" class="btn btn-outline-primary btn-lg game-btn2">PAPER</a>
+            </div>
+            <div class="option">
+                <div class="game-image">
+                    <img src="~/css/scissor.png" alt="Scissor" class="scissor-image" />
+                </div>
+                <a asp-controller="COption" asp-action="PlayerVsComp" asp-route-id="2" class="btn btn-outline-primary btn-lg game-btn3">SCISSORS</a>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-cancel">EXIT</a>
+        </div>
+    </div>
+</body>
+</html>

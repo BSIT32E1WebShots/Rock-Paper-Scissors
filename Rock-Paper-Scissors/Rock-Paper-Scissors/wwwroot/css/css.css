@@ -1,0 +1,108 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+    .btn:hover {
+        background-color: #ffffff;
+    }
+
+.btn-outline-danger {
+    color: #fff;
+    background-color: #dc3545;
+}
+
+    .btn-outline-danger:hover {
+        color: #dc3545;
+        border: 3px solid #dc3545;
+    }
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.Message {
+    color: #dc3545;
+}
+
+.MessageGreen {
+    color: #28a745;
+}
+
+.index {
+    background-image: url("Bg.jpg");
+    background-size: 210vh 100vh;
+    background-position: inherit;
+    background-repeat: no-repeat;
+}
+
+
+.Result {
+    background-image: url("ResultBg.jpg");
+    background-size: 210vh 100vh;
+    background-position: inherit;
+    background-repeat: no-repeat;
+}
+
+.Inst {
+    background-image: url("InstructionsBg.jpg");
+}
+
+.playing {
+    background-image: url('PlayBg.jpg');
+    background-size: cover;
+    background-position: inherit;
+    background-repeat: no-repeat;
+}
+
+.game-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.option {
+    text-align: center;
+    flex: 1 1 200px;
+}
+
+.game-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.btn-cancel {
+    color: black;
+    background-color: red;
+    height: 50px;
+    width: 130px;
+    text-align: center;
+    padding: 5px;
+}
